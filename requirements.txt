@@ -20,6 +20,7 @@ debugpy==1.8.22
 defusedxml==0.7.1
 et_xmlfile==2.0.0
 executing==2.2.1
+fastapi==0.141.1
 fastjsonschema==2.22.2
 fonttools==4.66.0
 fqdn==1.5.1
@@ -94,6 +95,7 @@ rfc3987-syntax==1.1.0
 rpds-py==2026.6.3
 scikit-learn==1.9.1
 scipy==1.18.1
+statsmodels==0.14.6
 Send2Trash==2.1.0
 six==1.17.0
 soupsieve==2.10

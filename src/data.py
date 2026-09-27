@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 
 
-def load_monthly(path, ntd_id="50016", mode="MB", tos="DO"):
+def load_monthly(path, ntd_id="00001", mode="MB", tos="DO"):
     def select(frame):
         return frame.loc[
             frame["NTD ID"].astype("string").str.strip().eq(str(ntd_id))

@@ -15,7 +15,7 @@ from .modeling import MODELS, fit_model, predict, metrics
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def train(data_path, ntd_id="50016", mode="MB", tos="DO", horizon=12, start=None, output_root=ROOT):
+def train(data_path, ntd_id="00001", mode="MB", tos="DO", horizon=12, start=None, output_root=ROOT):
     if not 1 <= horizon <= 24:
         raise ValueError("Horizon must be between 1 and 24 months.")
     monthly, meta = load_monthly(data_path, ntd_id, mode, tos)
@@ -92,7 +92,7 @@ def train(data_path, ntd_id="50016", mode="MB", tos="DO", horizon=12, start=None
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", type=Path, required=True)
-    parser.add_argument("--ntd-id", default="50016")
+    parser.add_argument("--ntd-id", default="00001")
     parser.add_argument("--mode", default="MB")
     parser.add_argument("--tos", default="DO")
     parser.add_argument("--horizon", type=int, default=12)
