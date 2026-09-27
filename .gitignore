@@ -1,19 +1,14 @@
-# Python
+outputs
+transit-forecast
+.gitignore
+.venv/
 __pycache__/
 *.py[cod]
-
-# Virtual environment
-.venv/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# macOS
 .DS_Store
-
-# Generated models
-models/*.pkl
-models/*.joblib
-
-# Environment variables
 .env
+.ipynb_checkpoints/
+data/raw/*.xlsx
+data/processed/*.csv
+models/*.joblib
+reports/*.csv
+reports/*.json
